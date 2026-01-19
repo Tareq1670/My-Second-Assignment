@@ -79,6 +79,9 @@ a {
 }
 
 /* *Header Section Style */
+.header {
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+}
 
 .header_section {
     display: flex;
@@ -232,7 +235,7 @@ nav ul li a {
 .about {
     background: var(--black2-color);
 
-    padding: 70 0px 120px 0px;
+    padding: 50px 0px 120px 0px;
 }
 
 .about_content {
@@ -410,7 +413,7 @@ nav ul li a {
 
 .footer_section {
     height: 412px;
-    background: url(assets/footer-bg.png),rgb(35, 14, 61);
+    background: url(assets/footer-bg.png), rgb(35, 14, 61);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -448,7 +451,10 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    transition: span 0.3s ease;
+}
+
+.link_flex a span {
+    transition: all 0.3s ease;
 }
 
 .link_flex a span:hover {
@@ -460,6 +466,88 @@ nav ul li a {
     opacity: 0.6;
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .header_section {
+        padding: 24px 20px;
+    }
+    .hero {
+        padding: 0px 20px;
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+
+    .choose {
+        padding: 40px 20px;
+    }
+
+    .choose_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row_span {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .col_span {
+        grid-column: span 1;
+    }
+
+    .featured {
+        padding: 40px 20px;
+    }
+
+    .featured_container {
+        justify-items: center;
+    }
+
+    .featured_content_box {
+        max-width: 460px;
+    }
+
+    .host {
+        margin-top: 45px;
+    }
+
+    .parson_detail h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .parson_detail p {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .parson_social_icon a img {
+        height: 15px;
+    }
+
+    .footer_section {
+        max-width: 992px;
+        height: 248px;
+        margin: 0 auto;
+        background: url(assets/footer-bg.png), rgb(32, 15, 65);
+        background-size: 1500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 40px 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .host_person {
+        padding: 20px;
+    }
+
+    .footer_content {
+        gap: 20px;
+    }
+}
+
+/* *Mobile Responsive */
 @media screen and (max-width: 576px) {
     /* *Sheared Style */
     .sub2_header {
@@ -556,7 +644,7 @@ nav ul li a {
     }
 
     .featured_container {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 16px;
     }
 
@@ -610,6 +698,7 @@ nav ul li a {
         background-repeat: no-repeat;
         padding: 40px 20px;
         position: relative;
+        text-align: center;
     }
 
     .link_flex {
