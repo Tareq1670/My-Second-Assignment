@@ -29,8 +29,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /* *Sheared Style */
 
 .max_width {
@@ -68,7 +66,8 @@ a {
     color: var(--primary-color);
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .sub2_header {
@@ -88,7 +87,7 @@ a {
     padding: 24px 0;
 }
 
-.header_section .logo a h2 {
+.logo a h2 {
     font-size: 34px;
     font-weight: 800;
     color: var(--primary-color);
@@ -96,7 +95,7 @@ a {
     z-index: 1;
 }
 
-.header_section .logo a h2::before {
+.logo a h2::before {
     content: "TechWave";
     position: absolute;
     font-family: "Inter";
@@ -107,7 +106,7 @@ a {
     -webkit-text-stroke: 1px var(--black-color);
 }
 
-.header_section .logo a h2 span {
+.logo a h2 span {
     background: linear-gradient(to top, var(--linear-gradient1));
     -webkit-background-clip: text;
     background-clip: text;
@@ -234,6 +233,10 @@ nav ul li a {
     text-align: center;
 }
 
+.about_content h2 {
+    margin-bottom: 16px;
+}
+
 .about_content p {
     line-height: 20px;
 }
@@ -308,7 +311,113 @@ nav ul li a {
     margin-bottom: 16px;
 }
 
+/* *Featured Style */
+
+.featured {
+    padding: 120px 0px;
+    background: rgba(26, 11, 46, 1);
+}
+
+.featured_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.featured_content_box {
+    border-radius: 24px;
+    background: rgba(37, 13, 68, 1);
+    overflow: hidden;
+}
+
+.featured_title {
+    padding: 24px;
+}
+
+.watch_time {
+    color: var(--green-color);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+/* *Meet The Host Style */
+
+.host{
+    margin-top: 120px;
+}
+
+.host_person {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+    gap: 24px;
+}
+
+.parson_img img {
+    width: 200px;
+}
+
+.parson_detail {
+    max-width: 960px;
+}
+
+.parson_detail h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.parson_detail p {
+    margin-bottom: 16px;
+}
+
+.parson_social_icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.parson_social_icon a {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.parson_social_icon a:hover{
+    background:rgba(217, 0, 255, 0.328);
+}
+
+.parson_social_icon a img {
+    height: 20px;
+}
+
 @media screen and (max-width: 576px) {
+    /* *Sheared Style */
+    .sub2_header{
+        margin-bottom: 24px;
+    }
+
+    .featured_title{
+        padding: 16px;
+    }
+
+    .sub2_header{
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+
+
     .header_section {
         flex-direction: column;
         gap: 10px;
@@ -383,4 +492,53 @@ nav ul li a {
     .row_span {
         grid-row: span 1;
     }
+
+    /* *Featured Style */
+    .featured{
+        padding: 40px 20px;
+    }
+
+    .featured_container {
+        gap: 16px;
+    }
+
+    .featured_content_box{
+        margin-bottom: 8px;
+    }
+
+    .featured_content_box p{
+        margin-bottom: 8px;
+    }
+
+    .host{
+        margin-top: 60px;
+    }
+
+    .host_person{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    .parson_img img{
+        width: 150px;
+    }
+
+    .parson_detail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parson_detail h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    
+
+    
 }
