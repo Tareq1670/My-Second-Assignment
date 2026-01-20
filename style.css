@@ -77,7 +77,7 @@ a {
 
 .sub2_header {
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 16px;
     text-transform: capitalize;
@@ -148,6 +148,8 @@ nav ul li a {
     height: 760px;
     background: url(assets/hero-bg.png);
     background-position: center;
+    background-size: cover;
+    margin: 0 auto;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -408,6 +410,7 @@ nav ul li a {
 
 .parson_detail p {
     margin-bottom: 16px;
+    opacity: 0.6;
 }
 
 .parson_social_icon {
@@ -439,6 +442,7 @@ nav ul li a {
 .footer_section {
     height: 412px;
     background: url(assets/footer-bg.png), rgb(35, 14, 61);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -556,7 +560,7 @@ nav ul li a {
         height: 248px;
         margin: 0 auto;
         background: url(assets/footer-bg.png), rgb(32, 15, 65);
-        background-size: 1500px;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         padding: 40px 20px;
