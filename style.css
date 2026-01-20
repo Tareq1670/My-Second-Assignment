@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
 }
 
@@ -744,8 +745,8 @@ nav ul li a {
         height: 248px;
         margin: 0 auto;
         background: url(assets/footer-bg.png), rgb(32, 15, 65);
-        background-size: 650px;
-        background-position: center;
+        background-size: 680px 90%;
+        background-position: center 0px;
         background-repeat: no-repeat;
         padding: 40px 20px;
         position: relative;
