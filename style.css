@@ -634,6 +634,12 @@ nav ul li a {
         top: 5px;
     }
 
+    .hero_btn .btn1{
+        gap: 1px;
+        font-size: 14px;
+        padding: 12px 12px;
+    }
+
     /* *About Responsive */
 
     .about {
@@ -642,6 +648,15 @@ nav ul li a {
 
     .sub_header {
         font-size: 32px;
+    }
+
+    .box h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .box p{
+        font-size: 14px;
     }
 
     .p_text1 br {
@@ -658,7 +673,7 @@ nav ul li a {
     }
 
     .grid_box {
-        padding: 20px;
+        padding: 24px;
         border-radius: 24px;
     }
 
